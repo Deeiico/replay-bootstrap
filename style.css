@@ -1,0 +1,235 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* common */
+.title-section {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.stella {
+    text-align: center;
+}
+
+.blue-star {
+    color: #2c3e50;
+}
+
+.bg-darkblue {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.bg-green {
+    background-color: #1abc9c;
+    color: white;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+input.form-control, textarea.form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid lightgray;
+    box-shadow: none;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-list ul li {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.burger i {
+    font-size: 25px;
+}
+
+/* MAIN */
+/* first section */
+.first-section {
+    text-align: center;
+}
+
+.first-section img {
+    width: 250px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.stella::before, .stella::after {
+    content: '';
+    width: 15%;
+    height: 4px;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.stella i {
+    margin: 0 7px;
+    font-size: 22px;
+}
+
+.blue-star::before, .blue-star::after {
+    background-color: #2c3e50;
+}
+
+/* second section */
+.ms-card {
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.ms-card img {
+    max-width: 100%;
+}
+
+/* third section */
+.ms-small-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.third-section .ms-button {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.ms-text {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ms-btn {
+    border-color: white;
+    color: white;
+}
+
+/* fourth section */
+.ms-btn-green {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-control::-moz-input-placeholder {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #2c3e50;
+    font-weight: 500;
+}
+  
+/* FOOTER */
+/* top-footer */
+.top-footer {
+    background-color: #3a546d;
+    color: white;
+    font-weight: 500;
+    padding: 25px 0;
+}
+
+.ms-contact {
+    margin: 1rem 0;
+}
+
+.description i {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.mini-title {
+    margin-bottom: 5px;
+}
+
+.description span {
+    color: #1abc9c;
+}
+
+/* bottom footer */
+.bottom-footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bottom-footer i {
+    font-size: 9px;
+}
+
+/* md screen */
+@media  screen and (min-width:768px) {
+    .ms-small-container {
+        width: 70%;
+    }
+}
